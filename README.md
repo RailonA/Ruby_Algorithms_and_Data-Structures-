@@ -4,7 +4,7 @@
 > This is for Microverse Algorithms & Data Structures morning mob programming.
 ![Drawing Book: ](https://www.hackerrank.com/challenges/drawing-book/problem)
 
-![Fizz Buzz](https://www.hackerrank.com/contests/microverse-coding-challenges/challenges/fizzbuzz )
+![Fizz Buzz](https://www.hackerrank.com/challenges/fizzbuzz/problem)
  
 
 ![Electronic Shop:](https://www.hackerrank.com/challenges/electronics-shop/problem)
