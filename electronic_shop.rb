@@ -9,15 +9,33 @@ def getMoneySpent(keyboards, drives, b)
     #  compare array_1[index 2] + drives[i]
 
      total = 0 
+     last_t = 0
 
-     keyboards.each do |item|
-        drives.each do |usb|
-        # total =  keyboards[item] + drives.map
-        puts usb + item
-     end
+
+     if keyboards.min + drives.min > b
+         total = -1
+         total   
+     else
+        
+     keyboards.each_with_index do |item, index|
+        drives.each_with_index do |usb, index|
+         # puts keyboards[item], drives[usb]
+        
+        total =  keyboards[item].to_i + drives[usb].to_i
+        if total >= last_t && total <= b
+        last_t = total
+      end
+      end
     end
+
+     last_t
+
+     end
+     
+
 
 end
 
-getMoneySpent([3,1],[5,2,8],10)
+getMoneySpent([4],[5],5)
+
 # https://www.hackerrank.com/challenges/electronics-shop/problem
