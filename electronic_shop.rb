@@ -17,11 +17,11 @@ def getMoneySpent(keyboards, drives, b)
          total   
      else
         
-     keyboards.each_with_index do |item, index|
-        drives.each_with_index do |usb, index|
+     keyboards.each do |item |
+        drives.each do |usb|
          # puts keyboards[item], drives[usb]
         
-        total =  keyboards[item].to_i + drives[usb].to_i
+        total = item+usb
         if total >= last_t && total <= b
         last_t = total
       end
