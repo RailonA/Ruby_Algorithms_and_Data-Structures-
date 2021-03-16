@@ -18,3 +18,4 @@ def repeatedString(s, n)
 end
 
 repeatedString(['a','b','a'], 10)
+
