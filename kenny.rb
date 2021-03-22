@@ -1,7 +1,26 @@
 #!/bin/ruby
 
 # https://www.hackerrank.com/contests/microverse-coding-challenges/challenges/the-time-in-words/problem
+def repeatedString(s, n)
+  counter = 0
+  remainder = n % s.length
+    counter = ((n / s.length) * s.count("a"))
 
+    if (remainder > 0)
+        arr = s.split("")
+
+        remainder.times do |v|
+
+            if arr[v] == "a"
+                counter +=1
+            end
+        end
+    end
+
+
+counter
+
+end
 # Complete https://www.hackerrank.com/contests/microverse-coding-challenges/challenges/the-time-in-words/problem the timeInWords function below.
 def timeInWords(h, m)
     final_string = ""
@@ -103,7 +122,7 @@ def timeInWords(h, m)
 
             final_string = "#{minute_string} to  #{hour_string}"
       end
-      
+
       if (m == 45 && h == 12)
 
             final_string = "#{minute_string} to  #{numbers_to_name[1]}"
